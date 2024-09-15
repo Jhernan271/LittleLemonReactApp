@@ -4,10 +4,9 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import BookingPage from './BookingPage';
-import BookingConfirmation from './BookingConfirmation';
-import BookingForm from './BookingForm';
-import Menu from './Menu';
+import BookingPage from './components/BookingPage';
+import BookingForm from './components/BookingForm';
+import Menu from './components/Menu';
 import './App.css';
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
     <Routes>
       <Route path="/" element={<Main />} />
       <Route path="/booking" element={<BookingPage />} />
-      <Route path="/booking-confirmation" element={<BookingConfirmation />} />
       <Route path="/booking-form" element={<BookingForm />} />
       <Route path="/menu" element={<Menu />} />
     </Routes>

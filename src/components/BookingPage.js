@@ -1,9 +1,11 @@
 import React from 'react';
+import Main from './Main';
 
 const BookingPage = () => {
   return (
     <div>
-      <p>Booking Page</p>
+      <h1>Booking Page</h1>
+      <Main />
     </div>
   );
 };

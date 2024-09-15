@@ -1,24 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const BookingForm = () => {
-  const [formData, setFormData] = useState({
-    date: '',
-    time: '',
-    guests: 1,
-    occasion: 'Birthday',
-  });
-
-  const handleChange = (e) => {
-    const { id, value } = e.target;
-    setFormData({ ...formData, [id]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    //form valiation
-    console.log('Form submitted:', formData);
-  };
-
+const BookingForm = ({ formData, handleChange, handleSubmit }) => {
   return (
     <form onSubmit={handleSubmit} style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
       <label htmlFor="date">Choose date</label>
@@ -49,3 +31,4 @@ const BookingForm = () => {
 };
 
 export default BookingForm;
+
